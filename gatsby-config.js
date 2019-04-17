@@ -1,11 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Polling App`,
+    slogan: 'Taking the pulse of the world!',
+    description: `Gatsby Firebase Polling App Deom`,
     author: `@gatsbyjs`,
+    siteUrl: 'https://www.google.com',
+    image: 'some src',
+    video: 'some src',
+    twitter: 'some twitter handle',
+    logo: 'some src',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout.js`),
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

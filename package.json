@@ -5,21 +5,39 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "dotenv": "^6.0.0",
+    "firebase": "5.9.0",
     "gatsby": "^2.3.16",
     "gatsby-image": "^2.0.37",
+    "gatsby-plugin-create-client-paths": "^2.0.5",
+    "gatsby-plugin-layout": "^1.0.14",
     "gatsby-plugin-manifest": "^2.0.28",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.17",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-sortable-hoc": "^1.8.3",
+    "short-id": "^0.1.0-1",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.17.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.17.0",
+    "prettier-eslint-cli": "^4.7.1"
   },
   "keywords": [
     "gatsby"
@@ -28,7 +46,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'",
+    "lint": "eslint 'src/**/*.{js,jsx}' --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
